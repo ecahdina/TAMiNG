@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+<div class="title">ICTFF 8 — TaMiNG</div>
+<div>
+  <a href="index.html">Home</a>
+</div>
+</nav>
+</header>
+  <br>
+  <br>
+  <h2>Frequently Asked Questions (FAQ)</h2>
+  <br>
+
+  <div class="faq-item">
+    <button class="faq-question">1. What are the participant categories?</button>
+    <div class="faq-answer">
+      <p>There are two categories:<br><strong>• Student Category</strong><br><strong>• Alumni Category</strong> (graduates within the last five years)</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">2. Can previous ICTFF winners join the competition?</button>
+    <div class="faq-answer">
+      <p>Previous winners cannot join the <strong>Student Category</strong>, but they are allowed to participate under the <strong>Alumni Category</strong>.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">3. How many rounds are there?</button>
+    <div class="faq-answer">
+      <p>The event has two stages:</p>
+      <ul>
+        <li><strong>Qualification Round</strong> – Online, unlimited teams</li>
+        <li><strong>Final Round</strong> – Physical, only one team per university per category</li>
+      </ul>
+      <p>A university can send <strong>max 2 teams</strong> (Student + Alumni). Mixed-university teams do not affect any university quota.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">4. Can school students participate?</button>
+    <div class="faq-answer">
+      <p>Yes. School students may enter under their school’s name, but questions are at university level. Teams must consist of <strong>3 members</strong>.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">5. Can university students join the Alumni category?</button>
+    <div class="faq-answer">
+      <p>Yes. University students may enter the Alumni category if no alumni represent that university. Alumni cannot join the Student category.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const answer = button.nextElementSibling;
+    const isOpen = answer.style.maxHeight;
+
+    document.querySelectorAll(".faq-answer").forEach(a => a.style.maxHeight = null);
+
+    if (!isOpen) {
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+  });
+});
+</script>
+
+</body>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICTFF 8 — TaMiNG</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+<div class="title">ICTFF 8 — TaMiNG</div>
+<div>
+  <a href="#home">Home</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="tentatif.html">Schedule</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#register">Register</a>
+  <a href="participants.html">Participants</a>
+  <a href="faq.html">FAQ</a>
+</div>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<div class="hero-overlay">
+<h1>ICTFF 8 Cybersecurity CTF Event</h1>
+<p>Tactical Assault & Mastery in Information Network Games | UiTM Jasin 2026</p>
+<div id="timer" class="countdown"></div>
+<div class="hero-btn"><a href="#register" class="btn">Join Event</a></div>
+</div>
+</section>
+
+
+<!-- ================= Posters Zoom ================= -->
+<section class="poster-section">
+<h2>Official Posters</h2>
+<div class="poster-grid">
+<img src="ictff1.jpg" class="poster" onclick="zoom(this.src)">
+<img src="ictff2.jpg" class="poster" onclick="zoom(this.src)">
+<img src="ictff3.jpg" class="poster" onclick="zoom(this.src)">
+</div>
+</section>
+
+<div class="modal" id="posterModal">
+<img id="modalImg"><div class="close" onclick="closeModal()"></div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section class="about">
+<h2>About The Event</h2>
+<div class="about-grid">
+<div class="card"><h3>Objectives</h3><ul>
+<li>CTF & real-world cybersecurity exposure</li>
+<li>Enhance exploit & analysis skills</li>
+<li>Hybrid Competiton + Workshop</li>
+<li>Free for all universiti</li></ul></div>
+
+<div class="card"><h3>Eligibility</h3><ul>
+<li>UiTM + IPTA/IPTS around Malaysia</li>
+<li>Group Format</li>
+<li>24h Challenge Round</li>
+<li>Physical Final UiTM Jasin</li></ul></div>
+
+<div class="card"><h3>Timeline</h3><ul>
+<li>10–11 Jan • Online Workshop</li>
+<li>17–18 Jan • Qualification 24hr</li>
+<li>23–24 Jan • Grand Final Jasin</li></ul></div>
+</div>
+</section>
+
+<!-- ================= GALLERY AUTO SLIDER ================= -->
+<section id="gallery" class="gallery">
+  <h2>Gallery iCTFF</h2>
+  <div class="slider">
+    <div class="slide-track">
+
+      <a href="https://photos.app.goo.gl/RcGcD4PD5kagbxV79" target="_blank" class="slide" style="background-image: url('g1.jpg');">
+        <div class="overlay-img">
+          <img src="ictff2015.jpg" alt="">
+          <h3>iCTFF 1 (2015)</h3>
+        </div>
+      </a>
+
+      <a href="https://photos.app.goo.gl/Nve7Y1W7PeswMq47A" target="_blank" class="slide" style="background-image: url('g2.jpg');">
+        <div class="overlay-img">
+          <img src="ictff2016.png" alt="">
+          <h3>iCTFF 2 (2016)</h3>
+        </div>
+      </a>
+
+      <a href="https://t.me/c/1178865174/3951" target="_blank" class="slide" style="background-image: url('g3.jpg');">
+        <div class="overlay-img">
+          <img src="ictff2017.jpg" alt="">
+          <h3>iCTFF 3 (2017)</h3>
+        </div>
+      </a>
+
+      <a href="https://photos.app.goo.gl/2nXsBuL1iXXxNDdU7" target="_blank" class="slide" style="background-image: url('g4.jpg');">
+        <div class="overlay-img">
+          <img src="ictff4.jpg" alt="">
+          <h3>iCTFF 4 (2018)</h3>
+        </div>
+      </a>
+
+      <a href="https://photos.app.goo.gl/g7a3ys8nHycsNM1T7" target="_blank" class="slide" style="background-image: url('g5.jpg');">
+        <div class="overlay-img">
+          <img src="ictff2019.JPG" alt="">
+          <h3>iCTFF 5 (2019)</h3>
+        </div>
+      </a>
+
+      <a href="screenshot-folder-link" target="_blank" class="slide" style="background-image: url('screenshot1.jpg');">
+        <div class="overlay-img">
+          <img src="ictff2022.jpg" alt="">
+          <h3>iCTFF 6 (2022)</h3>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/drive/folders/1VAKJxjJA9_ytEZLpvB3FQN_2DJKuahC1" target="_blank" class="slide" style="background-image: url('g6.jpg');">
+        <div class="overlay-img">
+          <img src="ictff2023.jpg" alt="">
+          <h3>iCTFF 7 (2023)</h3>
+        </div>
+      </a>
+
+       <a href="https://photos.app.goo.gl/RcGcD4PD5kagbxV79" target="_blank" class="slide" style="background-image: url('g1.jpg');">
+        <div class="overlay-img">
+          <img src="ictff2015.jpg" alt="">
+          <h3>iCTFF 1 (2015)</h3>
+        </div>
+      </a>
+
+      <a href="https://photos.app.goo.gl/Nve7Y1W7PeswMq47A" target="_blank" class="slide" style="background-image: url('g2.jpg');">
+        <div class="overlay-img">
+          <img src="ictff2016.png" alt="">
+          <h3>iCTFF 2 (2016)</h3>
+        </div>
+      </a>
+
+      <a href="https://t.me/c/1178865174/3951" target="_blank" class="slide" style="background-image: url('g3.jpg');">
+        <div class="overlay-img">
+          <img src="ictff2017.jpg" alt="">
+          <h3>iCTFF 3 (2017)</h3>
+        </div>
+      </a>
+
+      <a href="https://photos.app.goo.gl/2nXsBuL1iXXxNDdU7" target="_blank" class="slide" style="background-image: url('g4.jpg');">
+        <div class="overlay-img">
+          <img src="ictff4.jpg" alt="">
+          <h3>iCTFF 4 (2018)</h3>
+        </div>
+      </a>
+
+      <a href="https://photos.app.goo.gl/g7a3ys8nHycsNM1T7" target="_blank" class="slide" style="background-image: url('g5.jpg');">
+        <div class="overlay-img">
+          <img src="ictff2019.JPG" alt="">
+          <h3>iCTFF 5 (2019)</h3>
+        </div>
+      </a>
+
+      <a href="screenshot-folder-link" target="_blank" class="slide" style="background-image: url('screenshot1.jpg');">
+        <div class="overlay-img">
+          <img src="ictff2022.jpg" alt="">
+          <h3>iCTFF 6 (2022)</h3>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/drive/folders/1VAKJxjJA9_ytEZLpvB3FQN_2DJKuahC1" target="_blank" class="slide" style="background-image: url('g6.jpg');">
+        <div class="overlay-img">
+          <img src="ictff2023.jpg" alt="">
+          <h3>iCTFF 7 (2023)</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPONSORS ================= -->
+<section class="sponsor-wrap">
+<h2 style="color:#ff7e00;margin-top:40px;">Sponsors & Supporters</h2>
+<div class="slider">
+<div class="slide-track sponsor-scroll">
+<div class="sponsor-logo">Sponsor 1</div>
+<div class="sponsor-logo">Sponsor 2</div>
+<div class="sponsor-logo">Sponsor 3</div>
+<div class="sponsor-logo">Sponsor 4</div>
+<div class="sponsor-logo">Sponsor 5</div>
+<div class="sponsor-logo">Sponsor 6</div>
+<div class="sponsor-logo">Sponsor 7</div>
+<div class="sponsor-logo">Sponsor 8</div>
+<div class="sponsor-logo">Sponsor 9</div>
+<div class="sponsor-logo">Sponsor 10</div>
+<div class="sponsor-logo">Sponsor 11</div>
+<div class="sponsor-logo">Sponsor 12</div>
+<div class="sponsor-logo">Sponsor 13</div>
+</div>
+</div>
+</section>
+
+<!-- ================= REGISTER FORM ================= -->
+<section id="register">
+    <h2>Contact for Registration</h2>
+    <p>For event registration & inquiries, please contact:</p>
+
+    <div class="contact-box">
+        <h5>+60 11-64636558 - Nur 'Izzah Najihah Binti Noor Azmi</h5>
+        <h5>+60 18-4650600 - Ahmad Najwan Bin Rohizat</h5> 
+    </div>
+</section>
+
+<footer>ICTFF 8 — UiTM Jasin 2026 © Cybersecurity Innovation</footer>
+
+<script>
+// countdown
+var eventDate=new Date("January 10 2026").getTime();
+setInterval(()=>{let now=new Date().getTime(),d=eventDate-now;if(d<0)return timer.innerHTML="LIVE NOW🔥";
+let day=Math.floor(d/86400000),h=Math.floor(d%86400000/3600000),m=Math.floor(d%3600000/60000);
+timer.innerHTML=`${day} Days • ${h} Hrs • ${m} Min`;},1000);
+function zoom(src){posterModal.style.display="flex";modalImg.src=src;}
+function closeModal(){posterModal.style.display="none";}
+</script>
+
+<script>
+  //poster
+  function zoom(src){
+  let modal = document.getElementById("posterModal");
+  let img = document.getElementById("modalImg");
+  
+  if(modal.style.display === "flex"){
+    modal.style.display = "none"; // second click closes
+  } else {
+    modal.style.display = "flex";
+    img.src = src;
+  }
+}
+
+// Image itself closes on click
+document.getElementById("modalImg").onclick = () => {
+  document.getElementById("posterModal").style.display = "none";
+};
+</script>
+</body>
+</html>
